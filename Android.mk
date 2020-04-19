@@ -3,6 +3,8 @@ ifneq ($(filter mpq8092 msm8960 msm8226 msm8x26 msm8610 msm8974 msm8x74 apq8084 
 
 MY_LOCAL_PATH := $(call my-dir)
 
+HAL_PATH := $(MY_LOCAL_PATH)
+
 ifeq ($(BOARD_USES_LEGACY_ALSA_AUDIO),true)
 include $(MY_LOCAL_PATH)/legacy/Android.mk
 else
